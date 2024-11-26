@@ -23,5 +23,11 @@ const limiter = rateLimit({
 // root route
 app.use('/',urlRouter)
 
+// testing route
+app.get('/ping',(req,res)=>{
+    res.send("pong")
+})
+
+
 // exporting the app 
 export default app
